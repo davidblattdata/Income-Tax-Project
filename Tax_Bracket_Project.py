@@ -243,6 +243,7 @@ while True:
     married_tax_cali_formatted = "{:,}".format(round(married_tax_cali))
     difference_formatted = "{:,}".format(round(difference))
     
+    #Basic User Interface
     def user_interface():
         print("\nTax on $" + amount_formatted + ' if you are single: \n\tFederal Tax: $' + single_tax_fed_formatted + ' \n\tState -- Cali: $' + single_tax_cali_formatted)
         print('\tNet after tax: $' + net_single_formatted + ' \n\t or $' + net_single_month_formatted + ' per month' + '\n\n')
@@ -262,7 +263,7 @@ while True:
             children = int(children)
             return children
             
-        #Amount Given
+        #User Interface Results
         selection = input('(s)--standard, (a)--advanced, or (x)--exit: ')
         if selection.lower() == 'x':
             break
